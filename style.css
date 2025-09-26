@@ -28,10 +28,62 @@ body{
     border:1.5px solid white;
 }
 
+/* sidebar-all */
+.side-bar-all{
+    height:100%;
+    width:0;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color:#fff;
+    overflow-x:hidden;  /* Hides anything that goes outside the width of the element (horizontally).*/
+    transition:0.3s;
+    box-shadow:2px 0 5px rgba(0,0,0,0.5) ;
+    z-index:10000;
+    padding-top:10px;
+}
+.sidebar-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #232f3e;
+    color: 15px 20px;
+}
+
+.sidebar-header h2{
+    margin:0;
+    color:#E6E6E6;
+    font-size: 18px;
+}
+.close-btn{
+    font-size: 28px;
+    color: #E6E6E6;
+    cursor: pointer;
+}
+.sidebar-section{
+    border-bottom: 1px;
+    padding:15px 20px;
+}
+.sidebar-section h3{
+    margin:0 0 10px 0;
+    font-size:16px;
+    color:#111;
+}
+
+.sidebar-section a{
+    display:block;
+    font-size:14px;
+    color:#007185;
+    text-decoration: none;
+    margin:8px 0;
+}
+.sidebar-section a:hover{
+    color:#c7511f;
+}
 /* box2 */
 p{
-    margin-block-start: 0;
-    margin-block-end: 0;
+    margin-block-start: 0; 
+    margin-block-end:0;
 }
 .dilver{
     color:#cccccc;
@@ -304,8 +356,55 @@ ul a{
     margin-top: 10px;
     list-style-type: none;
 }
+li{
+    list-style-type:none;
+    margin-top:5px;
+}
 .space{
     background-color: #222f3d;
     width: 100px;
     height: 291.6px;
 }
+
+/*footer-line*/
+.footer-line{
+    background-color: #0F1111;
+    display:flex;
+    justify-content:center ;
+    align-items: center;
+    color:#cccccc
+}
+.logo-foooter{
+    background-image:url("amazon_logo.jpg");
+    background-size: cover;
+    height: 50px;
+    width:113px;
+    margin: 30px;
+}
+
+.foot-link{
+    display:flex;
+    border: 1px solid #cccccc;
+    margin:10px ;
+    padding: 10px;
+}
+.foot-lang-select{
+    padding-left: 10px;
+    background-color: #0F1111;
+    border: none;
+    color: #cccccc;
+}
+.foot-link p{
+    padding-left:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
